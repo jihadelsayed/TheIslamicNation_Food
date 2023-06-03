@@ -1,0 +1,9 @@
+[submodule "src/app/authorization"]
+	path = src/app/authorization
+	url = https://github.com/davidpales1/authorization.git
+[submodule "src/app/header"]
+	path = src/app/header
+	url = https://github.com/davidpales1/header.git
+[submodule "TheIslamicNation_Food"]
+	path = TheIslamicNation_Food
+	url = https://github.com/davidpales1/TheIslamicNation_Food.git
