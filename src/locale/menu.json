@@ -1,0 +1,18 @@
+{
+  "en": {
+    "theCreator": "The Creator",
+    "creatures": "Creatures",
+    "languages": "Languages",
+    "religionsBooks": "Religions Books",
+    "islam": "Islam",
+    "muslims": "muslims"
+  },
+  "ar": {
+    "theCreator": "الخالق",
+    "creatures": "الخلق",
+    "languages": "اللغات",
+    "religionsBooks": "كتب الديانات",
+    "islam": "الإسلام",
+    "muslims": "المسلمين"
+  }
+}

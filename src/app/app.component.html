@@ -1,0 +1,21 @@
+<app-authorization></app-authorization>
+<!-- Nav -->
+<!-- <div class="container px-3 py-3 mx-auto"> -->
+<div [ngClass]="styleModeService.mode === 'light' ? 'bg-white' : 'bg-gray-800'">
+
+  <app-header></app-header>
+  <!-- your content here -->
+  <!-- Container pages -->
+  <div class="max-w-7xl mx-auto text-center mainRoute">
+    <section>
+      <!-- <app-spinner></app-spinner> -->
+      <router-outlet></router-outlet>
+    </section>
+  </div>
+  <!-- Footer -->
+  <!-- <app-footer-bottom ></app-footer-bottom> -->
+  <div class="max-w-7xl mx-auto">
+    <!-- <app-footer></app-footer> -->
+
+  </div>
+</div>
