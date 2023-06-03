@@ -1,5 +1,5 @@
 import { AuthorizationComponent } from './authorization/authorization.component';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,7 +14,7 @@ import { UserMenuComponent } from './header/user-menu/user-menu.component';
 import { MaterialModule } from './material';
 import { AppRoutingModule } from './app-routing.module';
 import { UserNotificationsMenuComponent } from './header/user-notifications-menu/user-notifications-menu.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,17 +30,18 @@ import { UserNotificationsMenuComponent } from './header/user-notifications-menu
     UserNotificationsMenuComponent,
 
     // authorization
-    AuthorizationComponent
+    AuthorizationComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    //HttpClientModule,
+    HttpClientModule,
     MaterialModule,
-    //FormsModule,
-
+    FormsModule,
   ],
-  providers: [{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }],
-  bootstrap: [AppComponent]
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
